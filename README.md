@@ -24,3 +24,8 @@ $ npm install
 13. [Webpack Dev Server](https://github.com/andresilvadev/treinamento-js/commit/573ac8ce44745f97c5ffdb1071cddad0c311429f)
 14. [Async e Await](https://github.com/andresilvadev/treinamento-js/commit/762d540606b2286e791de1eaf6e85b086f906fef)
 15. [Axios com Async e Await](https://github.com/andresilvadev/treinamento-js/commit/71c7bf2282e236fcd821e559612a9bcc012fac06)
+16. [Estruturando a aplicação e estilos](https://github.com/andresilvadev/treinamento-js/commit/74f0c9eb6c71e97bdb48eff0d92090e568d10920)
+17. [Adicionar repositórios](https://github.com/andresilvadev/treinamento-js/commit/fd58fcf89e337e583a91f708440e02accef205a6)
+18. [Render na tela](https://github.com/andresilvadev/treinamento-js/commit/310bfc522496aa0e375a73809080cf86d9806931)
+19. [Buscando dados na api do Github](https://github.com/andresilvadev/treinamento-js/commit/1e7df41281c8abf6b4b09a2c7296821f39d31c40)
+20. [Loading e mensagem de erro](https://github.com/andresilvadev/treinamento-js/commit/1aea6d9d2b427ed77664d63820bee1e07f82a7b4)
