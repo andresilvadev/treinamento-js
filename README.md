@@ -20,3 +20,5 @@ $ npm install
 9. [Template Literals](https://github.com/andresilvadev/treinamento-js/commit/54bd301bc6c0e25e2bd1ea213260cbdc3db0fd4f)
 10. [Short Syntax](https://github.com/andresilvadev/treinamento-js/commit/471c60ac1ec6f2a0666b9e6d58daec61e32190f8)
 11. [Configurando Webpack](https://github.com/andresilvadev/treinamento-js/commit/6f1401e0888dfc189d8477c5e82e9f6d9e1adae9)
+12. [Import e Export](https://github.com/andresilvadev/treinamento-js/commit/e0d4ed723d5215b83c6e3b97d58bb44c1b487915)
+16. [Webpack Dev Server](https://github.com/andresilvadev/treinamento-js/commit/573ac8ce44745f97c5ffdb1071cddad0c311429f)
