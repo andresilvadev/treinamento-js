@@ -90,11 +90,11 @@
 /*!********************!*\
   !*** ./funcoes.js ***!
   \********************/
-/*! exports provided: soma */
+/*! exports provided: soma, multiplicacao */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"soma\", function() { return soma; });\nfunction soma(a, b) {\n  return a + b;\n}\n\n//# sourceURL=webpack:///./funcoes.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"soma\", function() { return soma; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"multiplicacao\", function() { return multiplicacao; });\nfunction soma(a, b) {\n  return a + b;\n}\nfunction multiplicacao(a, b) {\n  return a * b;\n}\n\n//# sourceURL=webpack:///./funcoes.js?");
 
 /***/ }),
 
@@ -106,7 +106,19 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _funcoes__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./funcoes */ \"./funcoes.js\");\n\nconsole.log(Object(_funcoes__WEBPACK_IMPORTED_MODULE_0__[\"soma\"])(1, 2));\n\n//# sourceURL=webpack:///./main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _funcoes__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./funcoes */ \"./funcoes.js\");\n/* harmony import */ var _subtracao__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./subtracao */ \"./subtracao.js\");\n // export devemos chamar o mesmo nome da função\n\n // no export defaul podemos chamar com o nome que a gente quiser\n// import * as funcoes './funcoes'; // Importa todas as funções em um objeto\n\nconsole.log(Object(_funcoes__WEBPACK_IMPORTED_MODULE_0__[\"soma\"])(1, 2));\nconsole.log(Object(_subtracao__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(8, 3));\nconsole.log(Object(_funcoes__WEBPACK_IMPORTED_MODULE_0__[\"multiplicacao\"])(5, 5)); // Renomeando a função importada\n\n//# sourceURL=webpack:///./main.js?");
+
+/***/ }),
+
+/***/ "./subtracao.js":
+/*!**********************!*\
+  !*** ./subtracao.js ***!
+  \**********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return subtracao; });\n// Export default pode existir somente um por arquivo\nfunction subtracao(a, b) {\n  return a - b;\n}\n\n//# sourceURL=webpack:///./subtracao.js?");
 
 /***/ })
 
