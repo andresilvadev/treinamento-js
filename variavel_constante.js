@@ -7,3 +7,7 @@ const usuario = { nome: 'Andre Silva'};
 
 usuario.nome = "Silva DEV";
 console.log(usuario);
+
+
+
+
