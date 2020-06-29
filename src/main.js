@@ -1,9 +1,12 @@
+import api from './api';
+
 class App {
     
     constructor() {
         this.repositories = [];
         this.formEl = document.getElementById('repo-form');
         this.listEl = document.getElementById('repo-list');
+        this.inputEl = document.querySelector('input[name=repository]');
         this.registerHandlers();
     }
 
@@ -16,15 +19,35 @@ class App {
         }
     }
 
-    addRepository(event) {
+    /**
+     * Adiciona um evento a listagem
+     * @param {*} event 
+     */
+    async addRepository(event) {
         event.preventDefault();
 
+        const repoInput = this.inputEl.value;
+
+        // Valida se tem valor no input, se não existir damos um return faz que a função pare de executar
+        if (repoInput.length === 0)
+            return;
+
+        // Se passou realiza a requizição na api
+        const response = await api.get(`/repos/${repoInput}`);
+
+        console.log(response);
+
+        const { name, description, html_url, owner: {avatar_url} } = response.data;
+
+        // Podemos usar o Short Sintax
         this.repositories.push({
-            name: 'rocketseat.com.br',
-            description: 'Tire a sua ideia do papel e dê vida à sua startup.',
-            avatar_url: 'https://avatars0.githubusercontent.com/u/28929274?v4',
-            html_url: 'http://github.com/rocketseat/rocketseat.com.br'
+            name: name,
+            description: description,
+            avatar_url: avatar_url,
+            html_url: html_url
         });
+
+        this.inputEl.value = '';
 
         this.render();
 
