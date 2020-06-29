@@ -7,7 +7,54 @@
 </head>
 <body>
 
-    <button id="novotodo">Adicionar</button>
+    <style>
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        li {
+            clear: both;
+            margin-top: 20px;
+        }
+
+        img {
+            width: 80px;
+            float: left;
+            margin-right: 10px;
+        }
+
+        strong {
+            font-size: 20px;
+        }
+
+        p {
+            margin: 5px 0;
+        }
+
+    </style>
+    
+
+    <!-- <button id="novotodo">Adicionar</button> -->
+
+    <form id="repo-form">
+        <input type="text" name="repository">
+        <button type="submit">Adicionar</button>
+    </form>
+
+
+    <ul id="repo-list">
+        <li>
+            <img src="https://avatars0.githubusercontent.com/u/28929274?v4" alt="" />
+            <strong>rocketseat.com.br</strong>
+            <p>Tire a sua ideia do papel e dê vida à sua startup.</p>
+            <a href="http://github.com/rocketseat/rocketseat.com.br" target="_blank">Acessar</a>
+        </li>
+    </ul>
+
+
     
     <!-- O Webpack dev imbute o conteudo do bundle.js dentro do arquivo sem precisar criar ele fisicamente -->
     <script src="bundle.js"></script>
