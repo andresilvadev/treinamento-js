@@ -12,7 +12,8 @@
   "license": "ISC",
   "dependencies": {
     "@babel/cli": "^7.10.3",
-    "@babel/core": "^7.10.3"
+    "@babel/core": "^7.10.3",
+    "@babel/plugin-proposal-object-rest-spread": "^7.10.3"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.10.3"
